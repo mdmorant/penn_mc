@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
   has_one :school
   has_and_belongs_to_many :committees
   has_one :bill
+  belongs_to :school
 end
