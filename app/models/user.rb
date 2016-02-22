@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :committees
   has_one :bill
   belongs_to :school
+  validates_formatting_of :phone, using: :us_phone
 end
