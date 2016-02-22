@@ -1,4 +1,5 @@
 ActiveAdmin.register Bill do
+  permit_params :title, :status, :votes_yea, :votes_nay, :votes_abs, :recommended
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
