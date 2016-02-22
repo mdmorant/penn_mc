@@ -1,4 +1,5 @@
 ActiveAdmin.register SchoolRequest do
+  permit_params :delegate_requests, :delegates_allocated, :double_rooms, :king_rooms, :accepted_date, :deposit_paid, :hotel
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
