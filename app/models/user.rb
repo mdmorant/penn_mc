@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
         :recoverable, :rememberable, :trackable, :validatable
   has_one :school
   has_and_belongs_to_many :committees
+  has_one :bill
 end
